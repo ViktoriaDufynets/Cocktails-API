@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 //import { imagesApi } from './serviceApi';
 import Searchbar from './Searchbar/Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
-import Modal from './Modal/Modal';
+//import Modal from './Modal/Modal';
 
 
 export const App = () => {
 
   const [name, setName] = useState('');
   const [drinks, setDrinks] = useState([]);
-  const [showModal, setShowModal] = useState(false);
+//  const [showModal, setShowModal] = useState(false);
 
 
 
@@ -58,16 +58,12 @@ console.log('shake')
       console.log('drink')
           }
 
-  const toggleModal = () => {
-    setShowModal(showModal => !showModal);
-  };
-
 
   return (
     <>
 <Searchbar onSubmit={getSearchRequest}/>
 <ImageGallery drinks={drinks} Shake={Shake}/>
-{Drink() && <Modal onClose={toggleModal}/>}
+{/* {Drink() && <Modal onClose={toggleModal}/>} */}
     </>
 
   );
