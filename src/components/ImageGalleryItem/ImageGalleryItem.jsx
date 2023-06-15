@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import css from './ImageGalleryItem.module.css';
 
 
@@ -9,7 +9,7 @@ const Image = ({ description, smallImage, strIngredient1, strIngredient2, strIng
   <>
   <li className={css.ImageGalleryItem}>
   <div className={css.Block}>
-  <img className={css.ImageGalleryItemImage} src={smallImage} />
+  <img className={css.ImageGalleryItemImage} src={smallImage} alt="well"/>
   <div className={css.Desc}>
   <p className={css.Header}><b>{description}</b></p>
     

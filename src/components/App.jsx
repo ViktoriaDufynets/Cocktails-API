@@ -9,7 +9,7 @@ export const App = () => {
 
   const [name, setName] = useState('');
   const [drinks, setDrinks] = useState([]);
-  const [showModal, setShowModal] = useState(false);
+//  const [showModal, setShowModal] = useState(false);
 
 
 
